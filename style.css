@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif
+}
+div.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div.order-card {
+    border-radius: 15px;
+    background-color: white;
+    width: 400px;
+    
+}
+
+img.hero-img {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: 100%;
+}
+
+img + p {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    opacity: .8;
+}
+
+img + p + p {
+    text-align: center;
+    font-weight: 200;
+    opacity: .6;
+    margin: 0 58px;
+}
+
+div.music-icon {
+    position: relative;
+    width: calc(100% - 90px);
+    height: 90px;
+    background-color: hsl(225deg 100% 98%);
+    border-radius: 10px;
+    margin: 20px 0;
+    transform: translateX(45px);
+    
+}
+
+div.music-icon::after {
+    content: url(images/icon-music.svg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+div > p:nth-child(1) {
+    font-weight: 700;
+    transform: translate(85px, 20px);
+}
+
+div p.price {
+    transform: translate(85px, 25px);
+    font-weight: 200;
+    opacity: .6;
+}
+
+div p.change-btn {
+    transform: translate(75%, -10px);
+}
+
+div.btn {
+    width: calc(100% - 90px);
+    transform: translateX(45px);
+    padding: 10px;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    margin:  20px 0;
+    font-size: 14px;
+}
+
+div.btn + p {
+    text-align: center;
+    margin: 0 0 50px ;
+    font-weight: 700;
+    opacity: .5;
+    font-size: 13px;
+}
+
+div p.change-btn a:hover {
+    cursor: pointer;
+    opacity: .6;
+    text-decoration: none;
+}
+
+div.btn:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+div.btn + p:hover {
+    cursor: pointer;
+    opacity: 1;
+}
